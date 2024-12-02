@@ -53,13 +53,19 @@ p{font-size: 1.5rem;}
 
 /* focus attetion */
 .focus_section {
-    display: flex;
-    margin: 0 auto;
-    padding: 5%;
-    gap: 3rem;
-    align-items: center;
     background-color: rgba(0,35,51,255);
 }
+.contenuto{
+    display: flex;
+    margin: 0 auto;
+    padding:  5%;
+    padding-top: 0;
+    gap: 3rem;
+    align-items: center;
+}
+
+.text_focus{padding: 10% 5% 0 5%;}
+.text_focus h2{font-size: 4rem;}
 
 .image_container img {
     width: 100%;
@@ -191,11 +197,13 @@ p{font-size: 1.5rem;}
     .hero .col_40, .hero .col_60 {
         padding: 1rem 0;
     }
-    .focus_section {
+    .contenuto {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+    .text_focus h2{font-size: 1.5rem;}
+
 
     .image_container img {
         width: 80%;
