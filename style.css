@@ -13,7 +13,7 @@ p{font-size: 1.5rem;}
 /* home */
 .home{
     width: 100%; height:auto;
-    min-height: 1000px;
+    min-height: 65vh;
     padding: 5%;
     padding-top: 0;
     align-items:center;
@@ -259,6 +259,10 @@ p{font-size: 1.5rem;}
 
 }
 
+@media (min-width:100px){
+    .home{min-height: 80vh;}
+}
+
 @media (min-width: 769px) and (max-width: 1030px) {
     /* Generale */
     h1 { font-size: 2.5rem;}
@@ -267,7 +271,7 @@ p{font-size: 1.5rem;}
     p { font-size: 1rem; }
 
     .home {
-        min-height: 100vh;
+        min-height: 50vh;
     }
 
     .hero {
