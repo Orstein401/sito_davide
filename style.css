@@ -259,7 +259,7 @@ p{font-size: 1.5rem;}
 
 }
 
-@media (min-width:100px){
+@media (min-width:1300px){
     .home{min-height: 80vh;}
 }
 
