@@ -13,7 +13,7 @@ p{font-size: 1.5rem;}
 /* home */
 .home{
     width: 100%; height:auto;
-    min-height: 800px;
+    min-height: 1000px;
     padding: 5%;
     padding-top: 0;
     align-items:center;
@@ -192,7 +192,7 @@ p{font-size: 1.5rem;}
     h1,h2{padding-bottom: 1rem;}
     p{font-size: 0.8rem;}
     .col_30,.col_40,.col_50,.col_60{width: 100%;}
-    .home{min-height: 25vh;}
+    .home{min-height: 200px;}
     .hero{flex-direction: column-reverse; justify-content: center; padding: 2%;}
     .hero .col_40, .hero .col_60 {
         padding: 1rem 0;
@@ -267,7 +267,7 @@ p{font-size: 1.5rem;}
     p { font-size: 1rem; }
 
     .home {
-        min-height: 40vh;
+        min-height: 100vh;
     }
 
     .hero {
