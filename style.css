@@ -9,7 +9,7 @@ a{text-decoration: none;}
 body{ background-color: black; color: white;}
 h2,h1{text-align: center;padding-bottom: 2rem;}
 p{font-size: 1.5rem;}
-
+span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
 /* home */
 .home{
     width: 100%; height:auto;
@@ -29,7 +29,7 @@ p{font-size: 1.5rem;}
     background-color: rgba(1, 49, 71, 0.979);
 }
 
-.hero .col_40, .hero .col_60{padding:1rem;}
+.hero .col_50{padding:1rem;}
 .iframe_container {
     position: relative;
     width: 100%; 
@@ -110,6 +110,7 @@ p{font-size: 1.5rem;}
     background-color: rgb(2, 112, 155);
 }
 .card_service h3{font-size: 1.9rem;}
+#tit{margin-bottom: 0;}
 .card_service p{font-size: 1.3rem;}
 .img_card {
     position: absolute;
