@@ -4,22 +4,28 @@ body, html{font-family:'Inter', Arial, Helvetica, sans-serif; line-height:1; fon
 h1,h2,h3,h4,h5,h6,p,ol,ul{margin: 0 0 1rem 0; padding:0;}
 ol,ul{ list-style-type: none; padding-left: 20px; line-height: 1.5;}
 img{height: auto;}h1{font-size:3.5rem;}h2{font-size: 3rem;}h3{font-size: 2rem;}h4{font-size: 1rem;}h5{font-size: 0.8rem;}h6{font-size: 0.5rem;}
-a{text-decoration: none;}
+a{text-decoration: none; color:white}
 /* setting pagina */
 body{ background-color: black; color: white;}
 h2,h1{text-align: center;padding-bottom: 2rem;}
 p{font-size: 1.5rem;}
-span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
+span{font-weight: bold; font-size: 1.6rem;}
+
+
 /* home */
 .home{
     width: 100%; height:auto;
-    min-height: 65vh;
+    display: flex;
     padding: 5%;
     padding-top: 0;
+    padding-bottom: 0;
     align-items:center;
     position: relative;
+    background-color: rgba(0,35,51,255);
 }
-.home img{width: 100%; height: 100%; position: absolute; z-index: 1;filter: blur(1px);filter:brightness(0.9);top: 0; left: 0;}
+.home .col_70{text-align: center;}
+.home .col_30 img{width: 100%; height: 100%;filter: blur(1px);filter:brightness(0.9); border-radius: 50%; margin: 2rem; padding: 2rem;}
+.home .col_70 h1 span{color: #00e1ff; font-size: inherit; font-weight: inherit;}
 
 /* hero */
 .hero{ 
@@ -30,6 +36,8 @@ span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
 }
 
 .hero .col_50{padding:1rem;}
+.pulsante_abt{width:50%;background-color: #1C3A69;border: 2px solid #4A90E2;padding: 2% 2% 0% 2%; border-radius: 5px;  text-align: center; margin: 0 auto; font-weight: bold;}
+.pulsante_abt:hover {transform: scale(1.1); box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);}
 .iframe_container {
     position: relative;
     width: 100%; 
@@ -64,7 +72,7 @@ span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
     align-items: center;
 }
 
-.text_focus{padding: 10% 5% 0 5%;}
+.text_focus{padding: 5% 5% 0 5%;}
 .text_focus h2{font-size: 4rem;}
 
 .image_container img {
@@ -92,7 +100,7 @@ span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
 .service {
     padding: 5%;
     text-align: center;
-    background-color: rgb(1, 49, 71, 0.979)
+    background-color:  rgba(0,35,51,255); 
 }
 .grid {
     display: flex;
@@ -125,7 +133,7 @@ span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
 .text_service{padding: 3%;}
 
 /* about */
-.about{display: flex;padding: 5%;align-items:center;flex-wrap: wrap; background-color: rgba(0,35,51,255);  }
+.about{display: flex;padding: 5%;align-items:center;flex-wrap: wrap; background-color: rgb(1, 49, 71, 0.979) }
 .about img{width: 100%; border-radius: 10px;}
 .about .col_60{padding:2%;text-align:start; font-size: 1.5rem;}
 .about .col_40{padding:2%;}
@@ -133,6 +141,7 @@ span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
 .about_card p{margin: 0;}
 .about_cards{display: flex; justify-content:space-around; font-weight: bold; gap:2rem; padding: 1rem 0;}
 .about_card{background-color: #4A90E2;border: 2px solid #1C3A69; border-radius: 5px; padding: 1.2rem; padding-bottom: 1rem; text-align: center;}
+.about_card:hover{transform: scale(1.1); box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);}
 .about_card:nth-child(2) {
     background-color: #1C3A69;
     border: 2px solid #4A90E2;
@@ -140,14 +149,74 @@ span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
 
 
 /* portafolio */
-.portafolio{display:flex;padding: 5%;flex-wrap: wrap; flex-direction: column;background-color: rgb(1, 49, 71, 0.979);text-align: center;}
-.text{text-align: center;}
-.portafolio .col_100{padding:0 5% 5% 5%;}
-.portafolio .col_100 p{padding-bottom: 2%;}
-.portafolio img{width: 100%; height: auto; border: 3px solid #069db1;  border-radius: 10px;}
+.portafolio{align-content: center; padding: 5%;flex-wrap: wrap;background-color: rgb(1, 49, 71, 0.979);text-align: center; }
+.portafolio h3{font-size: 2.5rem;}
+.text{text-align: center;margin-bottom: 5rem;}
+.studio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    align-items:flex-start;
+}
+.studio .cards_container{gap: 50px; padding: 5% 10%; padding-right: 0;}
+.cards_cont{width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; padding: 5% 10%; padding-left: 0%;}
+.card_portafolio{ 
+    background-color: #22597e;
+    text-align: start;
+    padding: 20px;
+    padding-bottom: 0;
+    border-left: solid 4px aqua;
+    border-radius: 8px;
+    line-height: 1.5;
+    overflow-wrap: break-word;}
 
+    .card_portafolioT{ 
+        background-color: #22597e;
+        text-align: start;
+        padding: 20px;
+        padding-bottom: 0;
+        border-right: solid 4px aqua;
+        border-radius: 8px;
+        line-height: 1.5;
+        overflow-wrap: break-word;}
+
+.portafolio .col_40 img{width: 100%; padding:5% 20% 20% 20%; margin-bottom:3rem ;}
+.portafolio .col_100{padding: 0 10rem;;}
+.portafolio .col_100 p{padding-bottom: 2%; text-align: center; margin-bottom: 2rem;}
+
+
+
+/* come lavoremo */
+.lavoro {
+    background-color: rgba(0, 35, 51, 1);
+    padding: 40px;
+    color: white;
+}
+
+.lavoro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.lavoro h3{color:#00e1ff}
+
+.lavoro ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.lavoro ul li {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
 /* footer */
 .footer{background-color: rgba(0,35,51,255); text-align:center; padding: 2% 5%;border-top: 4px solid #00e1ff;}
+.foot{display: flex;}
 .footer_instagram{    
     display: flex;
     justify-content: center;
@@ -176,8 +245,25 @@ span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
 .footer_instagram:hover .instagram_icon {
     transform: rotate(360deg); 
 }
+.footer_email {
+    margin-top: 20px;
+  }
+  
+  .footer_email a {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer_email a:hover {
+    color: #00e1ff;
+    transform: scale(1.05);
+  }
 /* colonne */
 .col_100{width: 100%;}
+.col_70{width: 70%;}
 .col_60{width: 60%;}
 .col_50{width: 50%;}
 .col_40{width: 40%;}
@@ -192,6 +278,7 @@ span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
     h3{font-size: 1.2rem;}
     h1,h2{padding-bottom: 1rem;}
     p{font-size: 0.8rem;}
+    span{font-size: 0.9rem;}
     .col_30,.col_40,.col_50,.col_60{width: 100%;}
     .home{min-height: 200px;}
     .hero{flex-direction: column-reverse; justify-content: center; padding: 2%;}
@@ -261,7 +348,7 @@ span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
 }
 
 @media (min-width:1300px){
-    .home{min-height: 80vh;}
+    .home{min-height: 40rem;}
 }
 
 @media (min-width: 769px) and (max-width: 1030px) {
@@ -270,9 +357,10 @@ span{font-weight: bold; font-size: 1.6rem;font-style: italic;}
     h2 { font-size: 2rem; }
     h3 { font-size: 1.5rem; }
     p { font-size: 1rem; }
+    span{ font-size: 1.1rem;}
 
     .home {
-        min-height: 50vh;
+        min-height: 22rem;
     }
 
     .hero {
