@@ -282,7 +282,7 @@ span{font-weight: bold; font-size: 1.6rem;}
     p{font-size: 0.8rem;}
     span{font-size: 0.9rem;}
     .col_30,.col_40,.col_50,.col_60{width: 100%;}
-    .home{min-height: 200px;}
+    .home{padding: 3%;}
     .hero{flex-direction: column-reverse; justify-content: center; padding: 2%;}
     .hero .col_40, .hero .col_60 {
         padding: 1rem 0;
@@ -446,50 +446,8 @@ span{font-weight: bold; font-size: 1.6rem;}
 }
 
 /* Mobile - max-width: 768px */
-@media (max-width: 768px) {
-    /* HOME */
-    .home {
-        flex-direction: row; /* Manteniamo la disposizione orizzontale */
-        justify-content: space-between;
-        align-items: center;
-        padding: 3%;
-    }
-    .home .col_70 {
-        width: 65%; /* Testo a sinistra */
-    }
-    .home .col_30 {
-        width: 30%; /* Immagine a destra */
-    }
-    .home .col_30 img {
-        width: 100%; /* Immagine che riempie la colonna */
-        height: auto;
-    }
 
-    /* PORTAFOLIO */
-    .portafolio_card {
-        margin: 1rem auto;
-        padding: 1rem;
-    }
-    .portafolio_card p {
-        font-size: 1.2rem;
-    }
-
-    /* LAVORO */
-    .lavoro {
-        padding: 2rem;
-        text-align: center;
-    }
-    .lavoro-content {
-        padding: 0;
-    }
-    .lavoro ul {
-        padding-left: 1rem;
-    }
-    .lavoro ul li {
-        font-size: 1rem;
-        text-align: left;
-    }
-}
+    
 
 /* Tablet e mobile orizzontale - min-width: 769px e max-width: 1030px */
 @media (min-width: 769px) and (max-width: 1030px) {
