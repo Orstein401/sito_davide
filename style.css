@@ -16,15 +16,13 @@ span{font-weight: bold; font-size: 1.6rem;}
 .home{
     width: 100%; height:auto;
     display: flex;
-    padding: 5%;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding:  0 5%;
     align-items:center;
     position: relative;
     background-color: rgba(0,35,51,255);
 }
 .home .col_70{text-align: center;}
-.home .col_30 img{width: 100%; height: 100%;filter: blur(1px);filter:brightness(0.9); border-radius: 50%; margin: 2rem; padding: 2rem;}
+.home .col_30 img{width: 100%; height: auto;filter: blur(1px);filter:brightness(0.9); border-radius: 50%; padding: 2rem;}
 .home .col_70 h1 span{color: #00e1ff; font-size: inherit; font-weight: inherit;}
 
 /* hero */
@@ -194,9 +192,10 @@ span{font-weight: bold; font-size: 1.6rem;}
 
 /* come lavoremo */
 .lavoro {
+    width: 100%;
     background-color: rgba(0, 35, 51, 1);
-    padding: 40px;
-    color: white;
+    padding:  2% 10%;
+    box-sizing: border-box;
 }
 
 .lavoro-content {
@@ -348,7 +347,7 @@ span{font-weight: bold; font-size: 1.6rem;}
     .footer h2{padding: 5%; margin:0}
     .footer a{font-size: 1.2rem;}
     .instagram_icon{width: 100px;}
-
+    .lavoro ul li{font-size: 0.8rem;}
 }
 
 @media (min-width:1300px){
